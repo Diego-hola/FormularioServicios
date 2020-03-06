@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Servicios</title>
+    <title>Recomendacion</title>
     <link rel="stylesheet" href="estilos.css">
   </head>
-  <body>
+  <body id="cuerpo">
+    <center>
     <h1>Servicios</h1>
     <form action="javascript:saludaHttp();">
-      <p><input type="text" id="nombre1" placeholder="Nombre 1"></p>
-      <p><input type="text" id="nombre2" placeholder="Nombre 2"></p>
+      <p><input type="text" id="nombre" placeholder="nombre"></p>
+      <p><input type="text" id="apellido" placeholder="apellido"></p>
+      <p><input type="text" id="correo" placeholder="correo"></p>
       <p>
-        <button type="submit">Saludar</button>
+        <button type="submit">Capturar datos</button>
       </p>
-      <footer>Copyright &copy; 2020 Gilberto Pacheco Gallegos.</footer>
+      <footer>Copyright &copy; 2020 Fernando García.</footer>
     </form>
+  </center>
     <script>
       //@ts-check
 
@@ -44,11 +47,15 @@
            * de la operación y toma la respuesta devuelta por el servidor.
            * @type {Response} */
           const respuestaHttp =
-            await fetch("saludo?nombre1="
+            await fetch("saludo?nombre="
               // @ts-ignore
-              + encodeURIComponent(nombre1.value.trim())
+              
+              + encodeURIComponent(nombre.value.trim())
               // @ts-ignore
-              + "&nombre2=" + encodeURIComponent(nombre2.value.trim()));
+              + "&apellido=" + encodeURIComponent(apellido.value.trim())
+              
+              // @ts-ignore
+              + "&correo=" + encodeURIComponent(correo.value.trim()));
           /* La property ok de la respuesta vale true si la conexión terminó
            * con éxito. */
           if (respuestaHttp.ok) {
