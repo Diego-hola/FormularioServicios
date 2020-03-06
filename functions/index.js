@@ -24,14 +24,14 @@ exports.saludo = functions.https.onRequest(
         throw new Error("Se requiere llenar el campo del apellido");
         }
 
-        else if (!request.query.hobbie) {
+        else if (!request.query.pasatiempo) {
         // Entra aquí si el correo es null, indefinido o ""
-        throw new Error("Se requiere llenar el campo del hobbie");
+        throw new Error("Se requiere llenar el campo del pasatiempo");
         }
       /* Solo se llega a esta parte si el nombre, apellido y correo electronico tienen un texto.
        * Devuelve un saludo. */
       response.send(
-        `Datos capturados con exito: Nombre: ${request.query.nombre} Apellido ${request.query.apellido} Correo ${request.query.correo}`);
+        `Datos capturados con exito: Nombre: ${request.query.nombre} Apellido ${request.query.apellido} pasatiempo ${request.query.correo}`);
     }
      catch (e) {
       // Devuelve un texto de error.

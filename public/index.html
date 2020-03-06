@@ -12,9 +12,9 @@
     <form action="javascript:saludaHttp();">
       <p><input type="text" id="nombre" placeholder="nombre"></p>
       <p><input type="text" id="apellido" placeholder="apellido"></p>
-      <p><input type="text" id="hobbie placeholder="hobbie"></p>
+      <p><input type="text" id="pasatiempo" placeholder="pasatiempo"></p>
       <p>
-        <button type="submit">PRESIONAR</button>
+        <button type="submit">Capturar datos</button>
       </p>
       <footer>Copyright &copy; 2020 Diego Rivera Gonzalez .</footer>
     </form>
@@ -55,7 +55,7 @@
               + "&apellido=" + encodeURIComponent(apellido.value.trim())
               
               // @ts-ignore
-              + "&hobbie=" + encodeURIComponent(hobbie.value.trim()));
+              + "&pasatiempo=" + encodeURIComponent(pasatiempo.value.trim()));
           /* La property ok de la respuesta vale true si la conexión terminó
            * con éxito. */
           if (respuestaHttp.ok) {
