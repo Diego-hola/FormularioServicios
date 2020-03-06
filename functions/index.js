@@ -24,9 +24,9 @@ exports.saludo = functions.https.onRequest(
         throw new Error("Se requiere llenar el campo del apellido");
         }
 
-        else if (!request.query.correo) {
+        else if (!request.query.hobbie) {
         // Entra aquí si el correo es null, indefinido o ""
-        throw new Error("Se requiere llenar el campo del correo electronico");
+        throw new Error("Se requiere llenar el campo del hobbie");
         }
       /* Solo se llega a esta parte si el nombre, apellido y correo electronico tienen un texto.
        * Devuelve un saludo. */

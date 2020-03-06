@@ -8,15 +8,15 @@
   </head>
   <body id="cuerpo">
     <center>
-    <h1>Servicios</h1>
+    <h1> Formulario de Servicios</h1>
     <form action="javascript:saludaHttp();">
       <p><input type="text" id="nombre" placeholder="nombre"></p>
       <p><input type="text" id="apellido" placeholder="apellido"></p>
-      <p><input type="text" id="correo" placeholder="correo"></p>
+      <p><input type="text" id="hobbie placeholder="hobbie"></p>
       <p>
-        <button type="submit">Capturar datos</button>
+        <button type="submit">PRESIONAR</button>
       </p>
-      <footer>Copyright &copy; 2020 Fernando García.</footer>
+      <footer>Copyright &copy; 2020 Diego Rivera Gonzalez .</footer>
     </form>
   </center>
     <script>
@@ -55,7 +55,7 @@
               + "&apellido=" + encodeURIComponent(apellido.value.trim())
               
               // @ts-ignore
-              + "&correo=" + encodeURIComponent(correo.value.trim()));
+              + "&hobbie=" + encodeURIComponent(hobbie.value.trim()));
           /* La property ok de la respuesta vale true si la conexión terminó
            * con éxito. */
           if (respuestaHttp.ok) {
