@@ -38,13 +38,17 @@ exports.saludo = functions.https.onRequest(
           } 
 
       else if (request.query.bebidas == "3" && request.query.edad >= 6 && request.query.edad < 70) {
-              alert("Te recomiendo agua de horchata, avena, tamarindo, melón o limón");
+              alert("Te recomiendo agua de frutas como , piña o tamarindo ");
         
           } 
       else if (request.query.bebidas == "4" && request.query.edad >= 6 && request.query.edad < 70) {
-              alert("Te recomiendo Fanta, squirt, sidral mundet");
+              alert("Te recomiendo Una rica Cocacola");
 
         }
+        else if (request.query.bebidas == "4" && request.query.edad >= 6 && request.query.edad <= 15) {
+            alert("Te recomiendo una bebida mas tranquila como un sidral munden");
+
+      }
 
       
     } catch (e) {
