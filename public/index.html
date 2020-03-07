@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recomendacion</title>
-    <link rel="stylesheet" href="misestilos.css">
-  </head>
-  <body id="cuerpo">
+<html lang="es">
+<head>
+
+	<title>Mi sitio web </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Este es un documento HTML5">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="stylesheet" href="misestilos.css">
+</head>
+<body>
+	<body background="fondo.jpg">
+	</body>	
+	<header id="cabeceralogo">
+		<div>
+			<h1>DIEGO RIVERA GONZALEZ</h1>
+		</div>
+	</header>
+<nav id="menuprincipal">
+	<div>
+		<ul>
+			<li><a href="autobiografia.html">AUTOBIOGRAFIA</a></li>
+			<li><a href="preguntas.html">PREGUNTAS</a></li>
+			<li><a href="habilidades.html">HABILIDADES</a></li>
+			<li><a href="pasatiempos.html">PASATIEMPOS</a></li>
+			<li><a href="metas.html">METAS</a></li>
+			<li><a href="contacto.html">CONTACTAME</a></li>
+		</ul>
+	</div>
+</nav>
+
+
+	
+<body>
+ <body id="cuerpo">
+    <center>
     <h1>Buenas tardes porfavor De donde nos visita y su edad y asi le recomendaremos alguna bebida</h1>
     <form action="javascript:recomendar();">
       <table>
@@ -24,8 +51,7 @@
                               <option value="5">Dubai</option>
                               <option value="6">EUA</option>
                         </select><br>
-                        <br>
-                        <br>
+                        
                         <td>Ingrese su edad: 
                       <input type="number"  value="15" min="10"
                           max="100" id="edad"/>
@@ -95,5 +121,29 @@
         }
       }
     </script>
-  </body>
+		</section>
+		
+	
+</main>
+<footer id="pielogo">
+
+	<div>
+		<section class="seccionpie">
+			<h1>Sitio Web</h1>
+			<p><a href="index.html">Principal</a></p>
+			<p><a href="fotos.html">Fotos</a></p>
+			<p><a href="videos.html">Videos</a></p>
+		</section>
+
+		<section class="seccionpie">
+			<h1>Ayuda</h1>
+			<p><a href="contacto.html">Contacto</a></p>
+		</section>
+		<section class="seccionpie">
+			<address>Toronto, Canada</address>
+			<small>&copy; Derechos Reservados 2016</small>
+		</section>
+	</div>
+</footer>
+</body>
 </html>
