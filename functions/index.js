@@ -14,7 +14,7 @@ exports.rec = functions.https.onRequest(
 
         if (!request.query.edad) {
         // Entra aquí si la edad es null, undefined o ""
-        throw new Error("Falta colocar la edad");
+        throw new Error("Falta colocar la edad::");
       }
       /* Solo se llega a esta parte si nombre1 y nombre 2 tienen un texto.
        * Devuelve un saludo. */
