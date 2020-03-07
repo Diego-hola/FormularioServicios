@@ -14,10 +14,10 @@ exports.rec = functions.https.onRequest(
     try {
         
       // verifica que el parámetro nombre1 recibido del navegador esté correcto.
-       (!request.query.bebida) {
+      
         // Entra aquí si el nombre1 es null, undefined o ""
         throw new Error("Falta seleccionar la bebida ");
-      }  if (!request.query.edad) {
+        if (!request.query.edad) {
         // Entra aquí si el nombre2 es null, undefined o ""
         throw new Error("Falta colocar la edad");
       }
