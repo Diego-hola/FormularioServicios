@@ -40,6 +40,14 @@ exports.recomendar = functions.https.onRequest(
         response.send("Te recomiendo Fanta, squirt, sidral mundet");
 
         }
+        else if (request.query.bebidas == 5 && request.query.edad >= 6 && request.query.edad < 70) {
+          response.send("Tenemos un sin fin de bebidas pero te recomiendo un vaso de agua ");
+  
+          }
+          else if (request.query.bebidas == 6 && request.query.edad >= 6 && request.query.edad < 70) {
+            response.send("Un tee helado");
+    
+            }
 
       
     } catch (e) {
