@@ -1,4 +1,3 @@
-
 // Este texto se ejecuta en el servidor.
 /** Se importa el objeto functions de la librería "firebase-functions". */
 const functions = require('firebase-functions');
@@ -12,13 +11,9 @@ exports.rec = functions.https.onRequest(
    * servidor. Corresponde a la librería Express. */
   (request, response) => {
     try {
-        
-      // verifica que el parámetro nombre1 recibido del navegador esté correcto.
-      
-        // Entra aquí si el nombre1 es null, undefined o ""
-        throw new Error("Falta seleccionar la bebida ");
+
         if (!request.query.edad) {
-        // Entra aquí si el nombre2 es null, undefined o ""
+        // Entra aquí si la edad es null, undefined o ""
         throw new Error("Falta colocar la edad");
       }
       /* Solo se llega a esta parte si nombre1 y nombre 2 tienen un texto.
